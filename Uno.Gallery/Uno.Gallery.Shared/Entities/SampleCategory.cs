@@ -13,13 +13,13 @@ namespace Uno.Gallery
         Theme,
         
 		[SampleCategoryInfo("\uE81E", "UI components")]
-		Components,
+		UIComponents,
         
         [SampleCategoryInfo("\uE8AE", "UI features")]
-        Features,
+        UIFeatures,
 
         [SampleCategoryInfo("\uE950", "Non-UI features")]
-        NonUI,
+        NonUIFeatures,
         
         [SampleCategoryInfo("\uF0B4", "Toolkit")]
 		Toolkit,
