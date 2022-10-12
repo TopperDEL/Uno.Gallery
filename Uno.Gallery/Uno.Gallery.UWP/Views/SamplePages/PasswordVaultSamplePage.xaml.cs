@@ -13,9 +13,11 @@ namespace Uno.Gallery.Views.Samples
 		private const string _resource = "MyResourceName";
 		private const string _userName = "MyUsername";
 
-        public PasswordVaultSamplePage()
+		public PasswordVaultSamplePage()
 		{
 			this.InitializeComponent();
+
+			DataContext = new PasswordVaultSampleCodeBehind();
 		}
 
 		private void Store_Click(object sender, RoutedEventArgs args)
@@ -63,5 +65,15 @@ namespace Uno.Gallery.Views.Samples
                 await dialog.ShowAsync();
             }
 		}
+	}
+
+	public class PasswordVaultSampleCodeBehind
+	{
+		public string Code1 { get; set; } = @"using System;
+
+public class Hello
+{
+	var myNewvar = 13;
+}";
 	}
 }
